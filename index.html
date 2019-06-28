@@ -7,19 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 </head>
 
 <body>
-
     <div class="container">
-        <h1>~* Crystal Collector *~</h1>
-        <div class="row" id="rules">
-            <div class="col-md-12">
+        <h1 class="text-center">~* Crystal Collector *~</h1>
+        <div class="row">
+            <div class="col-md-12" id="rules">
                 <p>You will be given a random number at the start of the game.</p>
                 <br />
                 <p>There are four crystals below. By clicking on a crystal you will add a specific ammount of points to
@@ -31,14 +30,14 @@
                 <p>The value of each crystal is hidden from you until you click on it.</p>
                 <br />
                 <p>Each time when the game starts, the game will change the values of each crystal.</p>
-                <br />
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8" id="goal">
+            <div class="col-md-8 text-center" id="goal">
                 <!--The random goal number will appear here-->
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="winLose">
                 <p id="winsLabel">Wins: 0</p>
                 <p id="lossesLabel">Losses: 0</p>
             </div>
@@ -57,7 +56,7 @@
                 <img src="assets/images/yellowC.jpg" id="yellowGem" height="120" width="120" />
             </div>
         </div>
-        <label>Your total so far:</label>
+        <label><strong>Your total so far:</strong></label>
         <div class="col-md-12" id="current">
             <!--The User's current number appears here-->
         </div>
